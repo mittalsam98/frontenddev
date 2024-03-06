@@ -1,6 +1,6 @@
 import React, { useContext, useState, useTransition } from 'react';
 import axios from 'axios';
-import { API_URL } from '../constants';
+import { TXN_API_URL } from '../constants';
 import { TransactionContext } from '../transaction-context';
 
 export default function TransactionForm() {
@@ -17,7 +17,7 @@ export default function TransactionForm() {
       amount
     };
     axios
-      .post(API_URL, data)
+      .post(TXN_API_URL, data)
       .then((response) => {
         dispatchGetAllTransaction('FETCH_TRANSACTION', {
           txn: [{ ...response.data }, ...allTransaction]
