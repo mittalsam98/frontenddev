@@ -11,8 +11,17 @@ body {
   border: 1px solid black;
   padding: 15px;
   background-color: #fff;
-  height: 25vh;
+  height: 40vh;
   margin: 0px 10px;
+}
+.form__container {
+  display: flex;
+  flex-direction: column;
+}
+.form__container--field {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .transaction__main {
