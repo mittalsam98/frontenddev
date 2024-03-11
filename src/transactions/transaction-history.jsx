@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react';
 import { TXN_API_URL } from '../constants';
-import { TransactionContext } from '../transaction-context';
-import History from './History';
+import { TransactionContext } from '../contexts/transaction-context';
+import History from './history';
 
 export default function TransactionHistory() {
   const { allTransaction, dispatchGetAllTransaction } = useContext(TransactionContext);

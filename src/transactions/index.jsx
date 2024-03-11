@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import './App.css';
-import TransactionForm from './form/TransactionForm';
-import { TransactionContext } from './transaction-context';
-import TransactionHistory from './transaction-history/TransactionHistory';
+import '../App.css';
+import { TransactionContext } from '../contexts/transaction-context';
+import TransactionForm from './transaction-form';
+import TransactionHistory from './transaction-history';
 
-export default function App() {
+export default function Transactions() {
   const [allTransaction, setAllTransaction] = useState([]);
 
   const dispatchGetAllTransaction = (actionType, action) => {
