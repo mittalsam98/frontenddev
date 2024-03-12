@@ -1,12 +1,12 @@
 export const createFolderNode = () => {
   return { type: 'CREATE_FOLDER_NODE' };
 };
-export const createFolderNode = () => {
-  return { type: 'ADD_CHILDREN' };
+export const addChildren = ({ type, parentNodeId }) => {
+  return { type: 'ADD_CHILDREN', id: parentNodeId };
 };
-export const createFolderNode = () => {
-  return { type: 'DELETE_NODE' };
+export const deleteNode = ({ type, nodeId }) => {
+  return { type: 'DELETE_NODE', id: nodeId };
 };
-export const createFolderNode = () => {
-  return { type: 'UPDATE_NODE' };
+export const updateNode = ({ type, nodeId }) => {
+  return { type: 'UPDATE_NODE', id: nodeId };
 };

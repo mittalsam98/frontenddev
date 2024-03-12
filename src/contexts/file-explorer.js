@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import { createContext, useContext } from 'react';
 export const FileExplorerContext = createContext();
 
 export function useFileExplorerContext() {
@@ -13,37 +13,37 @@ export function useFileExplorerContext() {
 
 export const initialState = [
   {
-    id: 1,
-    isFolder: false,
-    name: 'index.html',
-    children: []
-  },
-  {
-    id: 2,
+    id: 111,
     isFolder: true,
-    name: 'folder1',
-    children: [
-      {
-        id: 3,
-        isFolder: false,
-        name: 'folder1file.js',
-        children: []
-      },
-      {
-        id: 4,
-        isFolder: true,
-        name: 'folder1folder',
-        children: [
-          {
-            id: 5,
-            isFolder: false,
-            name: 'folder1folderfile.js',
-            children: []
-          }
-        ]
-      }
-    ]
+    name: 'Files And Folder',
+    children: []
   }
+  // {
+  //   id: 2,
+  //   isFolder: true,
+  //   name: 'folder1',
+  //   children: [
+  //     {
+  //       id: 3,
+  //       isFolder: false,
+  //       name: 'folder1file.js',
+  //       children: []
+  //     },
+  //     {
+  //       id: 4,
+  //       isFolder: true,
+  //       name: 'folder1folder',
+  //       children: [
+  //         {
+  //           id: 5,
+  //           isFolder: false,
+  //           name: 'folder1folderfile.js',
+  //           children: []
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // }
 ];
 
 /** Schema 1

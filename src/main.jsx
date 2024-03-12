@@ -26,9 +26,7 @@ const theme = {
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <MantineProvider withGlobalStyles withNormalizeCSS theme={theme}>
-      <AppRouter />
-    </MantineProvider>
-  </React.StrictMode>
+  <MantineProvider withGlobalStyles withNormalizeCSS theme={theme}>
+    <AppRouter />
+  </MantineProvider>
 );

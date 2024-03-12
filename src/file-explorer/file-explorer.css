@@ -1,2 +1,33 @@
 .outerContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 20px;
+  margin: auto;
+  border: 1px solid rgb(187, 183, 183);
+  -webkit-box-shadow: 3px -1px 25px -8px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 3px -1px 25px -8px rgba(0, 0, 0, 0.6);
+  box-shadow: 3px -1px 25px -8px rgba(0, 0, 0, 0.6);
+  background-color: rgb(254, 253, 246);
+}
+.main-folder__title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.main-folder__title-icon {
+  font-size: 13px;
+  margin-right: 3px;
+  color: rgb(86, 71, 71);
+}
+
+@media screen and (min-width: 720px) {
+  .outerContainer {
+    max-width: 40%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .outerContainer {
+    max-width: 30%;
+  }
 }

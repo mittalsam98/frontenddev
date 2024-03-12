@@ -1,6 +1,69 @@
-.nodes-container {
-}
 .node-container {
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-left: 15px;
+  margin-top: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.folder-icon {
+  font-size: 13px;
+  color: rgb(79, 77, 77);
+}
+
+.file-icon {
+  font-size: 13px;
+  color: rgb(132, 120, 120);
+}
+
+.name {
+  margin-left: 4px;
+}
+
+.node-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* CSS for the top level My App title and in-between nodes */
+.main-folder__title:hover .node-row__controls,
+.node-row:hover .node-row__controls {
+  opacity: 1;
+}
+
+.node-container_border:hover::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 13px;
+  left: 5px;
+  width: 0;
+  height: 100%;
+  border-right: 1px solid rgb(194, 201, 194);
+}
+
+/* -------------Controller CSS--------------- */
+
+/* Initially opacity will be 0 and when hover over it will become 1 */
+.node-row__controls {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  opacity: 0;
+}
+
+.node-row__controls-icon {
+  font-size: 13px;
+}
+.edit-icon {
+  font-size: 13px;
+  color: rgb(63, 122, 232);
+}
+.delete-icon {
+  color: rgb(227, 66, 82);
+}
+.addfolder-icon {
+  color: rgb(60, 118, 52);
+}
+.addfile-icon {
+  color: rgb(72, 69, 69);
 }

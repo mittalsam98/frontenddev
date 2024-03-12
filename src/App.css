@@ -1,37 +1,3 @@
 body {
   font-family: sans-serif;
-  padding: 10px;
-}
-.wrapper {
-  display: flex;
-}
-
-.sidebar__form {
-  width: 25%;
-  border: 1px solid black;
-  padding: 15px;
-  background-color: #fff;
-  height: 40vh;
-  margin: 0px 10px;
-}
-.form__container {
-  display: flex;
-  flex-direction: column;
-}
-.form__container--field {
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.transaction__main {
-  flex: 1;
-  padding: 15px;
-  border: 1px solid black;
-}
-
-.single__Txn {
-  padding: 10px;
-  border: 1px solid;
-  margin: 20px 10px;
 }
