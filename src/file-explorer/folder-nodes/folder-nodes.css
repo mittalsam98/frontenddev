@@ -6,10 +6,13 @@
 }
 .folder-icon {
   font-size: 13px;
+  z-index: 1000;
+
   color: rgb(79, 77, 77);
 }
 
 .file-icon {
+  z-index: 1000;
   font-size: 13px;
   color: rgb(132, 120, 120);
 }
@@ -34,7 +37,7 @@
   display: block;
   position: absolute;
   content: '';
-  top: 13px;
+  top: 17px;
   left: 5px;
   width: 0;
   height: 100%;

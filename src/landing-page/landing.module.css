@@ -1,0 +1,35 @@
+.outerContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.card {
+}
+
+@media screen and (min-width: 600px) {
+  .outerContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 960px) {
+  .outerContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.section {
+  border-bottom: 1px solid rgb(211, 203, 203);
+}
+
+.like {
+  color: var(--mantine-color-red-6);
+  width: rem(20px);
+  height: rem(20px);
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: var(--mantine-font-size-xs);
+  font-weight: 700;
+}

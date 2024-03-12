@@ -8,7 +8,6 @@ export default function AppRouter() {
   return (
     <Router>
       <Routes>
-        <Route index element={<FileExplorer />} />
         <Route index element={<LandingPage />} />
         <Route index path='transaction-demo' element={<Transactions />} />
         <Route index path='file-explorer' element={<FileExplorer />} />

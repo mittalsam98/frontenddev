@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { MantineProvider } from '@mantine/core';
 import AppRouter from './routes';
-
+import '@mantine/core/styles.css';
 const theme = {
   colorScheme: 'light',
   colors: {

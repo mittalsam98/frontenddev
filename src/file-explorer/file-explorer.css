@@ -4,6 +4,7 @@
   max-width: 100%;
   padding: 20px;
   margin: auto;
+  margin-top: 10px;
   border: 1px solid rgb(187, 183, 183);
   -webkit-box-shadow: 3px -1px 25px -8px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 3px -1px 25px -8px rgba(0, 0, 0, 0.6);
@@ -23,11 +24,11 @@
 
 @media screen and (min-width: 720px) {
   .outerContainer {
-    max-width: 40%;
+    max-width: 50%;
   }
 }
 @media screen and (min-width: 920px) {
   .outerContainer {
-    max-width: 30%;
+    max-width: 40%;
   }
 }
