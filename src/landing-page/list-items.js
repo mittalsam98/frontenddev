@@ -8,5 +8,10 @@ export const questionsList = [
     name: 'File Explorer',
     path: '/file-explorer',
     description: 'A file explorer system'
+  },
+  {
+    name: 'Infinite Scroll',
+    path: '/infinite-scroll',
+    description: 'A infiniste scroll app'
   }
 ];
