@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import '../App.css';
 import axios from 'axios';
-import { ACCOUNT_API_URL } from '../constants';
+import { ACCOUNT_API_URL } from './constants';
 
 export default function History({ datum, index }) {
   const [lastItemCurrentBalance, setLastItemCurrentBalance] = useState(null);

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useContext, useEffect } from 'react';
-import { TXN_API_URL } from '../constants';
-import { TransactionContext } from '../contexts/transaction-context';
+import { TXN_API_URL } from './constants';
+import { TransactionContext } from './contexts/transaction-context';
 import History from './history';
 
 export default function TransactionHistory() {

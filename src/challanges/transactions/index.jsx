@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TransactionContext } from '../contexts/transaction-context';
+import { TransactionContext } from './contexts/transaction-context';
 import './transaction.css';
 import TransactionForm from './transaction-form';
 import TransactionHistory from './transaction-history';

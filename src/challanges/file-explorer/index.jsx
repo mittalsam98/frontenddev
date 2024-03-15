@@ -1,6 +1,5 @@
 import React, { useReducer } from 'react';
-import { HiFolderAdd } from 'react-icons/hi';
-import { FileExplorerContext, initialState } from '../contexts/file-explorer';
+import { FileExplorerContext, initialState } from './contexts/file-explorer';
 import './file-explorer.css';
 import Nodes from './folder-nodes';
 import NodeController from './shared/node-controller';

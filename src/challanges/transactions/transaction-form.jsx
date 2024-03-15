@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useContext, useState } from 'react';
-import { TXN_API_URL } from '../constants';
-import { TransactionContext } from '../contexts/transaction-context';
+import { TXN_API_URL } from './constants';
+import { TransactionContext } from './contexts/transaction-context';
 
 export default function TransactionForm() {
   const [accountId, setAccountId] = useState('');

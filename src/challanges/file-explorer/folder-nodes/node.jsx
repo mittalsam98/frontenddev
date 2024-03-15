@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FaFile, FaFolder } from 'react-icons/fa';
 import Nodes from '.';
-import { useFileExplorerContext } from '../../contexts/file-explorer';
+import { useFileExplorerContext } from '../contexts/file-explorer';
 import NodeController from '../shared/node-controller';
 import './folder-nodes.css';
 
