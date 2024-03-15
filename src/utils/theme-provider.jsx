@@ -1,23 +1,16 @@
-import React from 'react';
 import { MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
-import { useLocalStorage } from '@mantine/hooks';
+import React from 'react';
+
+const theme = {
+  colors: {
+    'light-border': ['#e6e6e6']
+  }
+};
 
 export default function ThemeProvider({ children }) {
-  const [colorScheme, setColorScheme] = useLocalStorage({
-    key: 'color-scheme',
-    defaultValue: 'dark'
-  });
-  const toggleColorScheme = () =>
-    setColorScheme((current) => (current === 'dark' ? 'light' : 'dark'));
   return (
-    <MantineProvider
-      withGlobalStyles
-      withNormalizeCSS
-      theme={{
-        colorScheme: colorScheme
-      }}
-    >
+    <MantineProvider defaultColorScheme='dark' withGlobalStyles withNormalizeCSS theme={theme}>
       {children}
     </MantineProvider>
   );

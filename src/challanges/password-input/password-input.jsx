@@ -1,6 +1,6 @@
 import React, { memo, useRef, useState } from 'react';
 import classes from './password-input.module.css';
-function PasswordInput({ length, type }) {
+function PasswordInput({ length = 4, type = 'number', size = 40 }) {
   const [inputValues, setInputValues] = useState(Array(length).fill(''));
   const inputRef = useRef(Array(length).fill(null));
 
@@ -56,6 +56,7 @@ function PasswordInput({ length, type }) {
               value={inputValues[i]}
               data-value={i}
               type={type}
+              style={{ height: size, width: size }}
               onChange={onChangeHandler}
               onKeyDown={keyDownHandler}
               onFocus={onFocusHandler}

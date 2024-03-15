@@ -1,4 +1,3 @@
-import './App.css';
 import FileExplorer from './challanges/file-explorer';
 import InfiniteScroll from './challanges/infinite-scroll';
 import LandingPage from './components/landing-page';

@@ -8,7 +8,7 @@ export default function Landing() {
   return (
     <div className={classes.outerContainer}>
       {questionsList.map((val) => {
-        return <CardDatum val={val} />;
+        return <CardDatum key={val.name} val={val} />;
       })}
     </div>
   );

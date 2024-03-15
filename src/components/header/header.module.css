@@ -3,10 +3,16 @@
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  padding: 0px 120px;
-  border-bottom: 1px solid rgb(211, 204, 204);
+  padding: 0px 10px;
+  border-bottom: 1px solid var(--mantine-color-light-border-0);
 }
 
 .link {
   text-decoration: none;
+}
+
+@media screen and (min-width: 730px) {
+  .header {
+    padding: 0px 120px;
+  }
 }
