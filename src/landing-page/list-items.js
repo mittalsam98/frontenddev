@@ -13,5 +13,10 @@ export const questionsList = [
     name: 'Infinite Scroll',
     path: '/infinite-scroll',
     description: 'A infiniste scroll app'
+  },
+  {
+    name: 'Password Input',
+    path: '/password-input',
+    description: 'A beautiful password input '
   }
 ];
