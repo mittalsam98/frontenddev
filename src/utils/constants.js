@@ -18,5 +18,10 @@ export const questionsList = [
     name: 'Password Input',
     path: '/password-input',
     description: 'A beautiful password input '
+  },
+  {
+    name: 'Age Calculator',
+    path: '/age-calculator',
+    description: 'Calculate age by entering the age '
   }
 ];

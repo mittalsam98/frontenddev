@@ -5,6 +5,7 @@ import PasswordInput from './challanges/password-input';
 import Transactions from './challanges/transactions';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Layout from './components/layouts/layout';
+import AgeCalculator from './challanges/age-calculator';
 
 export default function AppRouter() {
   return (
@@ -16,6 +17,7 @@ export default function AppRouter() {
           <Route path='file-explorer' element={<FileExplorer />} />
           <Route path='infinite-scroll' element={<InfiniteScroll />} />
           <Route path='password-input' element={<PasswordInput />} />
+          <Route path='age-calculator' element={<AgeCalculator />} />
         </Route>
       </Routes>
     </Router>

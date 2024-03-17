@@ -1,0 +1,108 @@
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
+  border: 1px solid var(--mantine-color-light-border-0);
+}
+.title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.formContainer {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formInnerContainer {
+  display: flex;
+  gap: 20px;
+}
+.label {
+  font-size: 13px;
+  color: grey;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.input,
+.yearInput,
+.inputError,
+.yearInputError {
+  height: 45px;
+  width: 48px;
+  text-align: center;
+  font-size: 20px;
+
+  border-radius: 3px;
+}
+
+.yearInput,
+.yearInputError {
+  width: 70px !important;
+}
+.input:focus,
+.input:active,
+.yearInput:focus,
+.yearInput:active {
+  border: 3px solid rgb(123, 161, 218);
+  outline: none;
+}
+
+.inputError,
+.yearInputError {
+  border: 1px solid red;
+  outline: none;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  height: 45px;
+  width: 150px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 720px) {
+  .outerContainer {
+    width: 50%;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .btn {
+    background-color: red;
+    color: black;
+  }
+}
+/* Result Css */
+
+.resultTitle,
+.error {
+  font-size: 25px;
+  font-weight: 400;
+}
+.value {
+  font-size: 28px;
+  color: rgb(218, 72, 218);
+  font-weight: 800;
+}
+.valueText {
+  padding-right: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
+}
+.error {
+  color: red;
+}
