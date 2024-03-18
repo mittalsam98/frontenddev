@@ -5,8 +5,13 @@
   justify-content: center;
   height: 80px;
   padding: 6px 10px;
-  border-bottom: 1px solid var(--mantine-color-light-border-0);
+  /* border-bottom: 1px solid var(--mantine-color-light-border-0); */
+  position: absolute;
+  width: 100%;
+  z-index: 1111;
+  backdrop-filter: blur(1px);
 }
+
 .searchContainer {
   display: flex;
   gap: 12px;
@@ -20,10 +25,10 @@
 }
 .linkFrontend {
   margin-left: 8px !important;
-  color: #c34326;
+  color: var(--mantine-color-primaryRed-0);
 }
 .linkDev {
-  color: #244a55;
+  color: var(--mantine-color-primaryGrey-0);
 }
 
 @media screen and (min-width: 730px) {

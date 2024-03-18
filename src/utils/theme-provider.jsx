@@ -4,7 +4,9 @@ import React from 'react';
 
 const theme = {
   colors: {
-    'light-border': ['#e6e6e6']
+    'light-border': ['#e6e6e6'],
+    primaryRed: ['#c34326', '#f58167'],
+    primaryGrey: ['#244a55']
   }
 };
 

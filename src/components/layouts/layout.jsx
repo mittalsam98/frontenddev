@@ -1,10 +1,10 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import MyHeader from '../header/header';
-
+import classes from './layout.module.css';
 export default function Layout() {
   return (
-    <div>
+    <div className={classes.layoutContainer}>
       <MyHeader />
       <Outlet />
     </div>

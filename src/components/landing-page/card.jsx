@@ -1,44 +1,39 @@
-import { FaHeart } from 'react-icons/fa';
-import { Card, Image, Text, Group, Badge, Button, ActionIcon } from '@mantine/core';
-import classes from './landing.module.css';
+import { Button, Card, Group, Text, ThemeIcon, rem, useMantineTheme } from '@mantine/core';
+import { BsGithub } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 export default function CardDatum(props) {
-  const { description, name, path } = props.val;
-  return (
-    <Card withBorder radius='md' p='md' className={classes.card}>
-      {/* <Card.Section>
-        <Image src={image} alt={title} height={180} />
-      </Card.Section> */}
+  const { description, name, path, github } = props.val;
+  const theme = useMantineTheme();
 
-      <Card.Section className={classes.section} mt='md'>
-        <Group justify='center'>
-          <Text fz='lg' fw={500}>
-            {name}
-          </Text>
-        </Group>
-        <Text fz='sm' ml='xs' mt='xs'>
+  return (
+    <>
+      <Card withBorder radius='md'>
+        <ThemeIcon
+          size='xl'
+          radius='md'
+          variant='gradient'
+          gradient={{ deg: 180, from: theme.colors.primaryRed[1], to: theme.colors.primaryRed[0] }}
+        >
+          <Link to={github} target='_blank'>
+            <BsGithub style={{ width: rem(28), height: rem(28), color: '#fff' }} stroke={1.5} />
+          </Link>
+        </ThemeIcon>
+        <Text size='xl' fw={600} mt='md'>
+          {name}
+        </Text>
+        <Text size='sm' mt='sm' mb='lg'>
           {description}
         </Text>
-      </Card.Section>
-
-      {/* <Card.Section className={classes.section}>
-        <Text mt='md' className={classes.label} c='dimmed'>
-          Perfect for you, if you enjoy
-        </Text>
-        <Group gap={7} mt={5}>
-          {features}
+        <Group mt='xs'>
+          <Button variant='link' component={Link} to={path} radius='md' style={{ flex: 1 }}>
+            Check demo
+          </Button>
+          {/* <ActionIcon variant='default' radius='md' size={36}>
+            <FaHeart className={classes.like} stroke={1.5} />
+          </ActionIcon> */}
         </Group>
-      </Card.Section> */}
-
-      <Group justify='center' mt='xs'>
-        <Link to={path}>Check demo</Link>
-        {/* <ActionIcon variant='default' radius='md' size={36}>
-          <FaHeart className={classes.like} stroke={1.5} />
-        </ActionIcon> */}
-      </Group>
-    </Card>
+      </Card>
+    </>
   );
 }
-
-// https://ui.mantine.dev/category/app-cards/

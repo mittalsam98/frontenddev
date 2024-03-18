@@ -1,7 +1,27 @@
 .outerContainer {
+  width: 100%;
+  padding-top: 80px;
+  background-size: 14px 24px;
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.07) 1px, transparent 1px);
+}
+
+.backgroundEffect {
+  position: absolute;
+  height: 310px;
+  width: 310px;
+  top: 0;
+  left: 45%;
+  z-index: -1;
+  background-color: rgb(190, 158, 190); /* Adjust color code accordingly */
+  filter: blur(150px);
+  border-radius: 100%;
+}
+
+.cardContainer {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 10px;
+  gap: 25px;
   padding: 20px;
 }
 
@@ -12,31 +32,50 @@
   align-items: center;
 }
 
-.card {
-}
-
 @media screen and (min-width: 600px) {
-  .outerContainer {
+  .cardContainer {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0px 30px;
+  }
+  .outerContainer {
+    padding: 80px 50px 50px 50px;
   }
 }
 @media screen and (min-width: 960px) {
+  .cardContainer {
+    padding: 0px 90px;
+    grid-template-columns: repeat(4, 1fr);
+  }
   .outerContainer {
-    grid-template-columns: repeat(3, 1fr);
+    padding: 80px 50px 50px 50px;
   }
 }
-.section {
-  border-bottom: 1px solid rgb(211, 203, 203);
+
+/* Hero Section Css */
+
+.heroContainer {
+  z-index: 100;
+  text-align: center;
+}
+.icon {
+  font-size: 20px;
 }
 
-.like {
-  color: var(--mantine-color-red-6);
-  width: rem(20px);
-  height: rem(20px);
+/* Card CSS */
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 150ms ease, box-shadow 100ms ease;
+  padding: 21px;
+  text-decoration: none;
+  color: #000;
 }
-
-.label {
-  text-transform: uppercase;
-  font-size: var(--mantine-font-size-xs);
-  font-weight: 700;
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: rem(6px);
+  background-image: linear-gradient(0, red, blue);
 }
