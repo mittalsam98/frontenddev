@@ -1,6 +1,7 @@
 .outerContainer {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
 }
 
 .postLink {
@@ -10,7 +11,7 @@
 @media screen and (min-width: 600px) {
   .outerContainer {
     grid-template-columns: repeat(2, 1fr);
-    padding: 50px;
+    padding: 40px;
   }
 }
 @media screen and (min-width: 960px) {

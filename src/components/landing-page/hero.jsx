@@ -1,7 +1,8 @@
-import { Chip } from '@mantine/core';
+import { Chip, Text } from '@mantine/core';
 import React from 'react';
 import { FaXTwitter } from 'react-icons/fa6';
 import classes from './landing.module.css';
+import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
   return (
@@ -11,7 +12,16 @@ export default function HeroSection() {
         checked={true}
         icon={<FaXTwitter style={{ width: '16px', height: '16px' }} />}
       >
-        Share with Friend
+        <Text
+          variant='link'
+          component={Link}
+          to='https://twitter.com/intent/post?via=Sachin_Mittal98&name=Sachin_Mittal98&text=Check%20out%20this%20awesome%20Github%20repo%20&url=https://github.com/mittalsam98/frontenddev'
+          className={classes.linkTwitter}
+          target='_blank'
+          fw={100}
+        >
+          Share on Twitter
+        </Text>
       </Chip>
       <div className={classes.exploreChip}></div>
       <h1 classNAme={classes.heading}>Explore the Most Asked Frequent Questions</h1>
