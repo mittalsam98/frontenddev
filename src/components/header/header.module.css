@@ -14,7 +14,16 @@
 }
 
 .link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+}
+.linkFrontend {
+  margin-left: 8px !important;
+  color: #c34326;
+}
+.linkDev {
+  color: #244a55;
 }
 
 @media screen and (min-width: 730px) {

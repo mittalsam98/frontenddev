@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { questionsList } from '../../utils/constants';
 import { useSearchChallengesDispatch } from '../../utils/contexts/search-challenge-context';
 import classes from './header.module.css';
+import FD from '../../assets/frontend_dev_logo.svg';
 
 const MyHeader = () => {
   const { toggleColorScheme, colorScheme } = useMantineColorScheme();
@@ -16,7 +17,13 @@ const MyHeader = () => {
   return (
     <header className={classes.header}>
       <Link className={classes.link} to={'/'}>
-        <Title order={3}>Frontend React Challenges</Title>
+        <img src={FD} height={25} />
+        <Title className={classes.linkFrontend} order={3}>
+          Frontend
+        </Title>
+        <Title className={classes.linkDev} order={3}>
+          Dev
+        </Title>
       </Link>
       <div className={classes.searchContainer}>
         <Autocomplete
