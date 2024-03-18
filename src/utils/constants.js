@@ -23,5 +23,10 @@ export const questionsList = [
     name: 'Age Calculator',
     path: '/age-calculator',
     description: 'Calculate age by entering the age '
+  },
+  {
+    name: 'Mind Game',
+    path: '/mind-game',
+    description: 'A mind game developed using react '
   }
 ];

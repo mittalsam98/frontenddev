@@ -1,0 +1,40 @@
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin: auto;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
+  border: 1px solid var(--mantine-color-light-border-0);
+}
+
+.slider {
+  width: 200px;
+  height: 70px !important;
+}
+
+.gridContainer {
+  display: grid;
+  gap: 20px;
+}
+.gridItem {
+  display: grid;
+  gap: 20px;
+  background-color: rgb(150, 207, 74);
+  width: 40px;
+  height: 40px;
+  font-weight: 700;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.hide {
+  visibility: hidden; /* background-color: rgb(199, 106, 30); */
+}
+
+.pointerClass {
+  cursor: not-allowed;
+}
