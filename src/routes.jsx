@@ -1,12 +1,12 @@
-import FileExplorer from './challanges/file-explorer';
-import InfiniteScroll from './challanges/infinite-scroll';
+import FileExplorer from './challenges/file-explorer';
+import InfiniteScroll from './challenges/infinite-scroll';
 import LandingPage from './components/landing-page';
-import PasswordInput from './challanges/password-input';
-import Transactions from './challanges/transactions';
+import PasswordInput from './challenges/password-input';
+import Transactions from './challenges/transactions';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Layout from './components/layouts/layout';
-import AgeCalculator from './challanges/age-calculator';
-import MindGame from './challanges/mind-game';
+import AgeCalculator from './challenges/age-calculator';
+import MindGame from './challenges/mind-game';
 
 export default function AppRouter() {
   return (
