@@ -23,7 +23,7 @@
 .gridItem {
   display: grid;
   gap: 20px;
-  background-color: rgb(150, 207, 74);
+  background-color: rgb(204, 147, 236);
   width: 40px;
   height: 40px;
   font-weight: 700;
@@ -36,5 +36,26 @@
 }
 
 .pointerClass {
-  cursor: not-allowed;
+  cursor: wait;
+}
+
+/* Game Result css */
+
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: rgb(24, 86, 221);
+  border: none;
+  color: white;
+  height: 45px;
+  width: 150px;
+  border-radius: 4px;
+}
+.btn:hover {
+  cursor: pointer;
 }

@@ -52,6 +52,7 @@ export default function TransactionForm() {
         </div>
         <div className='form__container--field'>
           <button
+            className='btn'
             data-type='transaction-submit'
             disabled={!accountId || !amount || isPending}
             type='submit'

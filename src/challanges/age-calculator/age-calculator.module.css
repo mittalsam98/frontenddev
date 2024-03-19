@@ -27,6 +27,7 @@
 }
 .label {
   font-size: 13px;
+  margin-bottom: 3px;
   color: grey;
 }
 
@@ -43,7 +44,7 @@
   width: 48px;
   text-align: center;
   font-size: 20px;
-
+  border: 2px solid rgb(131, 128, 128);
   border-radius: 3px;
 }
 
@@ -71,6 +72,7 @@
   color: white;
   height: 45px;
   width: 150px;
+  border-radius: 4px;
 }
 .btn:hover {
   cursor: pointer;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import classes from './mind-game.module.css';
-import ConfettiExplosion from 'react-confetti-explosion';
+import { Text } from '@mantine/core';
 
 export default function GameGrid(props) {
   const [arrValues, setArrValues] = useState([]);
@@ -9,6 +9,8 @@ export default function GameGrid(props) {
 
   //   Array format
   useEffect(() => {
+    setExposedList([]);
+    setSolvedList([]);
     const arrFillWithValues = Array(props.num)
       .fill()
       .map((_, i) => i + 1);
@@ -29,10 +31,14 @@ export default function GameGrid(props) {
       }, 700);
     }
 
+    if (arrValues.length && solvedList.length == arrValues.length / 2) {
+      props.stageHandler('result');
+    }
+
     return () => {
       clearTimeout(timer);
     };
-  }, [exposedList]);
+  }, [exposedList, arrValues, solvedList]);
 
   const itemClickHandler = (event) => {
     const action = event.currentTarget.getAttribute('data-item');
@@ -67,14 +73,14 @@ export default function GameGrid(props) {
                     solvedList.includes(val) ? classes.hide : ''
                   }`}
                 >
-                  {exposedList.includes(i) && val}
+                  <Text color='black' size='xl' fw={700}>
+                    {exposedList.includes(i) && val}
+                  </Text>
                 </div>
               );
             })
-          : ''}
+          : null}
       </div>
-      {solvedList.length == arrValues.length / 2 ? <ConfettiExplosion /> : null}
-      {solvedList.length == arrValues.length / 2 ? <ConfettiExplosion /> : null}
     </>
   );
 }

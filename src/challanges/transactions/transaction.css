@@ -7,7 +7,6 @@
   width: 25%;
   border: 1px solid black;
   padding: 15px;
-  background-color: #fff;
   height: 50vh;
   margin: 0px 10px;
 }
@@ -31,4 +30,12 @@
   padding: 10px;
   border: 1px solid;
   margin: 20px 10px;
+}
+.btn {
+  background-color: rgb(24, 86, 221);
+  border: none;
+  color: white;
+  height: 45px;
+  width: 150px;
+  border-radius: 4px;
 }
