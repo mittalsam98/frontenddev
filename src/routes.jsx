@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Layout from './components/layouts/layout';
 import AgeCalculator from './challenges/age-calculator';
 import MindGame from './challenges/mind-game';
+import RedoUndo from './challenges/redo-undo';
 
 export default function AppRouter() {
   return (
@@ -20,6 +21,7 @@ export default function AppRouter() {
           <Route path='password-input' element={<PasswordInput />} />
           <Route path='age-calculator' element={<AgeCalculator />} />
           <Route path='mind-game' element={<MindGame />} />
+          <Route path='redo-undo' element={<RedoUndo />} />
         </Route>
       </Routes>
     </Router>

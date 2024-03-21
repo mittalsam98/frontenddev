@@ -34,5 +34,11 @@ export const questionsList = [
     path: '/mind-game',
     description: 'A mind game developed using react ',
     github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/mind-game'
+  },
+  {
+    name: 'Redo/Undo',
+    path: '/redo-undo',
+    description: 'A redo/undo feature  ',
+    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/redo-undo'
   }
 ];
