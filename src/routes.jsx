@@ -8,6 +8,7 @@ import Layout from './components/layouts/layout';
 import AgeCalculator from './challenges/age-calculator';
 import MindGame from './challenges/mind-game';
 import RedoUndo from './challenges/redo-undo';
+import Pagination from './challenges/pagination';
 
 export default function AppRouter() {
   return (
@@ -22,6 +23,7 @@ export default function AppRouter() {
           <Route path='age-calculator' element={<AgeCalculator />} />
           <Route path='mind-game' element={<MindGame />} />
           <Route path='redo-undo' element={<RedoUndo />} />
+          <Route path='pagination' element={<Pagination />} />
         </Route>
       </Routes>
     </Router>

@@ -40,5 +40,11 @@ export const questionsList = [
     path: '/redo-undo',
     description: 'A redo/undo feature  ',
     github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/redo-undo'
+  },
+  {
+    name: 'Pagination',
+    path: '/pagination',
+    description: 'Pagination feature',
+    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/pagination'
   }
 ];
