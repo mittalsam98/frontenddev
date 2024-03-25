@@ -1,0 +1,20 @@
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  width: 100%;
+  border: solid 1px var(--mantine-color-light-border-0);
+  user-select: none;
+}
+
+@media screen and (min-width: 960px) {
+  .outerContainer {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .outerContainer {
+    width: 50%;
+  }
+}

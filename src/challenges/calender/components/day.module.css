@@ -1,0 +1,23 @@
+.dayContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 70px;
+  border-left: solid 1px var(--mantine-color-light-border-0);
+  cursor: pointer;
+}
+.dayContainer:hover {
+  background-color: var(--mantine-color-light-border-0);
+}
+.dayContainer:first-child {
+  border: none;
+}
+.selected,
+.selected:hover {
+  background-color: var(--mantine-primary-color-filled);
+  color: aliceblue;
+}
+.greyOut {
+  color: var(--mantine-color-gray-6);
+}

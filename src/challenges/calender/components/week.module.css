@@ -1,0 +1,4 @@
+.weekRowContainer {
+  display: flex;
+  border-top: solid 1px var(--mantine-color-light-border-0);
+}

@@ -46,5 +46,11 @@ export const questionsList = [
     path: '/pagination',
     description: 'Pagination feature',
     github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/pagination'
+  },
+  {
+    name: 'Calender',
+    path: '/calender',
+    description: 'Calender',
+    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/calender'
   }
 ];

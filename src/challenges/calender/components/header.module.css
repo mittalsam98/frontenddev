@@ -1,0 +1,52 @@
+.headerSection1 {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  background-color: var(--mantine-primary-color-filled);
+  height: 60px;
+  user-select: none;
+}
+
+.iconWrapper {
+  display: flex;
+  width: calc(100% / 7);
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.iconWrapper:hover {
+  background-color: var(--mantine-primary-color-8);
+}
+
+.monthNameWrapper {
+  flex: 1;
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 0.25rem;
+}
+
+.headerSection2 {
+  display: flex;
+  font-weight: 500;
+  cursor: default;
+  font-size: 1.2rem;
+  color: var(--mantine-primary-color-filled);
+}
+
+.day:hover {
+  background-color: var(--mantine-color-light-border-0);
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 70px;
+  border-left: solid 1px var(--mantine-color-light-border-0);
+  cursor: pointer;
+}
+.day:first-child {
+  border: none;
+}
