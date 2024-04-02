@@ -1,10 +1,11 @@
 export const questionsList = [
   {
-    name: 'Transaction Demo',
-    path: '/transaction-demo',
-    description: 'A transaction demo system',
-    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/transactions'
+    name: 'Calender',
+    path: '/calender',
+    description: 'Calender',
+    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/calender'
   },
+
   {
     name: 'File Explorer',
     path: '/file-explorer',
@@ -12,22 +13,10 @@ export const questionsList = [
     github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/file-explorer'
   },
   {
-    name: 'Infinite Scroll',
-    path: '/infinite-scroll',
-    description: 'A infiniste scroll app',
-    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/infinite-scroll'
-  },
-  {
     name: 'Password Input',
     path: '/password-input',
     description: 'A beautiful password input ',
     github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/password-input'
-  },
-  {
-    name: 'Age Calculator',
-    path: '/age-calculator',
-    description: 'Calculate age by entering the age ',
-    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/age-calculator'
   },
   {
     name: 'Mind Game',
@@ -48,9 +37,21 @@ export const questionsList = [
     github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/pagination'
   },
   {
-    name: 'Calender',
-    path: '/calender',
-    description: 'Calender',
-    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/calender'
+    name: 'Infinite Scroll',
+    path: '/infinite-scroll',
+    description: 'A infiniste scroll app',
+    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/infinite-scroll'
+  },
+  {
+    name: 'Age Calculator',
+    path: '/age-calculator',
+    description: 'Calculate age by entering the age ',
+    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/age-calculator'
+  },
+  {
+    name: 'Transaction Demo',
+    path: '/transaction-demo',
+    description: 'A transaction demo system',
+    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challanges/transactions'
   }
 ];
