@@ -1,10 +1,10 @@
 import dayjs from 'dayjs';
 import React, { useState } from 'react';
-import classes from './calender.module.css';
+import classes from './calendar.module.css';
 import Header from './components/header';
 import Week from './components/week';
 
-export default function Calender() {
+export default function Calendar() {
   const [month, setMonth] = useState(dayjs().format('MMMM YYYY'));
   const [selectedDay, setSelectedDay] = useState(dayjs().startOf('day'));
 

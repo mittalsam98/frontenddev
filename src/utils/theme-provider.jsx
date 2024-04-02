@@ -3,6 +3,7 @@ import '@mantine/core/styles.css';
 import React from 'react';
 
 const theme = {
+  primaryColor: 'blue',
   colors: {
     'light-border': ['#e6e6e6', '#f2f2f2'],
     primaryRed: ['#c34326', '#f58167'],

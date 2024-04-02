@@ -9,7 +9,7 @@
 .backgroundEffect {
   position: absolute;
   height: 310px;
-  width: 310px;
+  width: 100px;
   top: 0;
   left: 45%;
   z-index: -1;
@@ -32,7 +32,16 @@
   align-items: center;
 }
 
+@media screen and (min-width: 300px) {
+  .backgroundEffect {
+    width: 180px;
+  }
+}
+
 @media screen and (min-width: 600px) {
+  .backgroundEffect {
+    width: 310px;
+  }
   .cardContainer {
     grid-template-columns: repeat(2, 1fr);
     padding: 0px 30px;
@@ -42,12 +51,27 @@
   }
 }
 @media screen and (min-width: 960px) {
+  .backgroundEffect {
+    width: 310px;
+  }
+  .cardContainer {
+    padding: 0px 90px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .outerContainer {
+    padding: 80px 50px 50px 50px;
+  }
+}
+@media screen and (min-width: 1260px) {
   .cardContainer {
     padding: 0px 90px;
     grid-template-columns: repeat(4, 1fr);
   }
-  .outerContainer {
-    padding: 80px 50px 50px 50px;
+}
+@media screen and (min-width: 1500px) {
+  .cardContainer {
+    padding: 0px 90px;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -59,23 +83,4 @@
 }
 .icon {
   font-size: 20px;
-}
-
-/* Card CSS */
-.card {
-  position: relative;
-  overflow: hidden;
-  transition: transform 150ms ease, box-shadow 100ms ease;
-  padding: 21px;
-  text-decoration: none;
-  color: #000;
-}
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: rem(6px);
-  background-image: linear-gradient(0, red, blue);
 }

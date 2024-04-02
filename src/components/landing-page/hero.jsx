@@ -24,7 +24,7 @@ export default function HeroSection() {
         </Text>
       </Chip>
       <div className={classes.exploreChip}></div>
-      <h1 classNAme={classes.heading}>Explore the Most Asked Frequent Questions</h1>
+      <h1 className={classes.heading}>Explore the Most Asked Frequent Questions</h1>
     </div>
   );
 }
