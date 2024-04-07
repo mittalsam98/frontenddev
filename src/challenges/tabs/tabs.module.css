@@ -1,0 +1,11 @@
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--mantine-color-light-border-0);
+}
