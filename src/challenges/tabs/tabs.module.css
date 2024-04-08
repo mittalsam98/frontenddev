@@ -9,3 +9,36 @@
   gap: 10px;
   border: 1px solid var(--mantine-color-light-border-0);
 }
+
+/* Tabs File */
+
+.tabContainer {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+.headerContainer {
+  display: flex;
+  background-color: white;
+}
+.contentContainer {
+  padding: 15px 25px;
+}
+
+.inactive {
+  background-color: #f6f7f9;
+  border-bottom: 1px solid grey;
+  padding: 15px 25px;
+}
+.extraSpan {
+  flex: 1;
+  background-color: #f6f7f9;
+
+  border-bottom: 1px solid grey;
+}
+
+.active {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid grey;
+  border-bottom: none;
+}

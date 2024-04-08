@@ -1,16 +1,26 @@
-import { Tabs } from '@mantine/core';
+import { useState } from 'react';
+import classes from './tabs.module.css';
 
-export default function Tab() {
+export default function Tab({ tabs }) {
+  const [selectedTabId, setSelectedTabId] = useState(tabs[0]?.id);
+  const selectedTab = tabs.find((tab) => tab.id == selectedTabId);
   return (
-    <Tabs defaultValue='first'>
-      <Tabs.List>
-        <Tabs.Tab value='first'>First tab</Tabs.Tab>
-        <Tabs.Tab value='second'>Second tab</Tabs.Tab>
-      </Tabs.List>
-
-      <Tabs.Panel value='first'>First panel</Tabs.Panel>
-      <Tabs.Panel value='d'>d panel</Tabs.Panel>
-      <Tabs.Panel value='second'>Second panel</Tabs.Panel>
-    </Tabs>
+    <div className={classes.tabContainer}>
+      <div className={classes.headerContainer}>
+        {tabs.map((tab) => (
+          <span
+            className={`${classes.inactive} ${tab.id == selectedTabId ? classes.active : ''}`}
+            key={tab.id}
+            onClick={() => setSelectedTabId(tab.id)}
+          >
+            {tab.header}
+          </span>
+        ))}
+        <span className={classes.extraSpan}></span>
+      </div>
+      <div key={selectedTabId} className={classes.contentContainer}>
+        {selectedTab.content}
+      </div>
+    </div>
   );
 }

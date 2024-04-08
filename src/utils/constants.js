@@ -56,6 +56,14 @@ export const questionsList = [
     difficulty: 'Easy'
   },
   {
+    name: 'Tabs',
+    path: '/tabs',
+    description:
+      'Create the customs tabs. Key feature is that it will be generic and can add as many tabs',
+    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challenges/infinite-scroll',
+    difficulty: 'Easy'
+  },
+  {
     name: 'Age Calculator',
     path: '/age-calculator',
     description:

@@ -10,6 +10,7 @@ import MindGame from './challenges/mind-game';
 import RedoUndo from './challenges/redo-undo';
 import Pagination from './challenges/pagination';
 import Calendar from './challenges/calendar';
+import Tabs from './challenges/tabs';
 
 export default function AppRouter() {
   return (
@@ -26,6 +27,7 @@ export default function AppRouter() {
           <Route path='redo-undo' element={<RedoUndo />} />
           <Route path='pagination' element={<Pagination />} />
           <Route path='calendar' element={<Calendar />} />
+          <Route path='tabs' element={<Tabs />} />
         </Route>
       </Routes>
     </Router>
