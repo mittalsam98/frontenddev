@@ -16,6 +16,13 @@ export const questionsList = [
     difficulty: 'Hard'
   },
   {
+    name: 'Tic Tac Toe',
+    path: '/tic-tac-toe',
+    description: 'A tic tac toe game implemented in react js',
+    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challenges/tic-tac-toe',
+    difficulty: 'Hard'
+  },
+  {
     name: 'Password Input',
     path: '/password-input',
     description:
@@ -60,7 +67,7 @@ export const questionsList = [
     path: '/tabs',
     description:
       'Create the customs tabs. Key feature is that it will be generic and can add as many tabs',
-    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challenges/infinite-scroll',
+    github: 'https://github.com/mittalsam98/frontenddev/tree/main/src/challenges/tabs',
     difficulty: 'Easy'
   },
   {
