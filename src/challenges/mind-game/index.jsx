@@ -4,20 +4,13 @@ import { lengthItems } from './contants';
 import GameGrid from './game-grid';
 import classes from './mind-game.module.css';
 import GameResult from './game-result';
-const MARKS = [
-  { value: 0, label: 'xs' },
-  { value: 25, label: 'sm' },
-  { value: 50, label: 'md' },
-  { value: 75, label: 'lg' },
-  { value: 100, label: 'xl' }
-];
+
 export default function MindGame() {
   const [num, setNum] = useState(8);
   const [stage, setStage] = useState('start');
   const stageHandler = (val = 'start') => {
     setStage(val);
   };
-  console.log(stage);
   return (
     <div className={classes.outerContainer}>
       {stage === 'start' ? (
