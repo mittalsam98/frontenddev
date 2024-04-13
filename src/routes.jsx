@@ -11,6 +11,7 @@ import RedoUndo from './challenges/redo-undo';
 import Pagination from './challenges/pagination';
 import Calendar from './challenges/calendar';
 import Tabs from './challenges/tabs';
+import TicTacToe from './challenges/tic-tac-toe';
 
 export default function AppRouter() {
   return (
@@ -28,6 +29,7 @@ export default function AppRouter() {
           <Route path='pagination' element={<Pagination />} />
           <Route path='calendar' element={<Calendar />} />
           <Route path='tabs' element={<Tabs />} />
+          <Route path='tic-tac-toe' element={<TicTacToe />} />
         </Route>
       </Routes>
     </Router>

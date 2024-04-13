@@ -1,0 +1,25 @@
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  width: 100%;
+  user-select: none;
+}
+
+.tileContainer {
+  display: grid;
+  margin: auto;
+  gap: 2px;
+}
+
+@media screen and (min-width: 960px) {
+  .outerContainer {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .outerContainer {
+    width: 50%;
+  }
+}
